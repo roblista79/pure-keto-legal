@@ -1,0 +1,69 @@
+<!doctype html>
+<!--
+  Account deletion request page (2026-09-29). Google Play requires a web
+  link where people can ask for their account and data to be deleted
+  without reinstalling the app, naming the app, the steps, and what is
+  deleted or kept (support.google.com/googleplay/android-developer/answer/13327111).
+  The in-app path matches app/settings/delete-account.tsx (type DELETE) and
+  supabase/functions/delete-account (auth.admin.deleteUser, which cascades
+  to every table keyed to the profile).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account · Pure Keto</title>
+<meta name="description" content="How to delete your Pure Keto account and data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="kicker"><a href="./">Pure Keto</a> · Delete your account</p>
+<h1>Delete your Pure Keto account.</h1>
+<p class="lead">You can delete your Pure Keto account and all of its data at any time, from the app or by asking us.</p>
+
+<section>
+<h2>In the app</h2>
+<ol>
+<li>Open Pure Keto and go to the Me tab.</li>
+<li>Tap Delete Account.</li>
+<li>Type DELETE and confirm.</li>
+</ol>
+<p>Your account is deleted straight away.</p>
+</section>
+
+<section>
+<h2>Without the app</h2>
+<p>Email <a href="mailto:support@lifteddigitalmedia.com?subject=Delete%20my%20Pure%20Keto%20account">support@lifteddigitalmedia.com</a> from the email address you signed up with, with the subject "Delete my Pure Keto account". We confirm it is your account, delete it, and reply within 30 days.</p>
+</section>
+
+<section>
+<h2>What is deleted</h2>
+<ul>
+<li>Your account: email, password hash and display name.</li>
+<li>Your profile and health answers.</li>
+<li>Your logs: meals, water, electrolytes, ketones, glucose, blood work, exercise, fasting and weight.</li>
+<li>Your Coach conversations and any Coach replies you reported.</li>
+<li>Saved recipes, shopping lists, your token balance and your usage history.</li>
+</ul>
+<p>Deletion is permanent and cannot be undone.</p>
+</section>
+
+<section>
+<h2>What is not deleted</h2>
+<ul>
+<li>Food, barcode and recipe scan results in shared caches. They are not tied to your account.</li>
+<li>Records of your purchases held by Apple, Google Play and RevenueCat, under their own policies.</li>
+<li>Data in Apple Health or Health Connect. Pure Keto only read it, and it stays in your phone's health store.</li>
+</ul>
+</section>
+
+<section>
+<h2>Subscriptions</h2>
+<p>Apple or Google Play bills subscriptions, so deleting your account does not cancel one. On iPhone, cancel it in Settings under your Apple Account, then Subscriptions. On Android, cancel it in the Google Play app, under Subscriptions.</p>
+</section>
+
+<p class="foot">See also the <a href="privacy.html">Privacy Policy</a>.</p>
+</main>
+</body>
+</html>

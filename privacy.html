@@ -1,156 +1,161 @@
 <!doctype html>
+<!--
+  Pure Keto privacy policy, public web version (2026-09-29).
+  Google Play and the App Store both need this at a public URL. It says the
+  same as the in-app policy (app/settings/privacy.tsx), written for both
+  platforms at once: Apple Health on iPhone, Health Connect on Android.
+  scripts/tests/website.test.mjs fails if a section of the in-app policy is
+  missing here or the effective dates differ. Change both together.
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pure Keto Privacy Policy</title>
-<meta name="description" content="How Pure Keto collects, uses, and protects your data.">
-<style>
-  :root { --bg:#ffffff; --fg:#14201f; --muted:#4b5b59; --line:#dfe7e6; --accent:#0f766e; --card:#f5f9f8; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0e1514; --fg:#e8f0ef; --muted:#9db0ad; --line:#24332f; --accent:#5eead4; --card:#131d1b; }
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg);
-    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:40px 20px 80px; }
-  h1 { font-size:34px; line-height:1.2; margin:0 0 6px; letter-spacing:-0.5px; }
-  h2 { font-size:21px; margin:38px 0 8px; padding-top:24px; border-top:1px solid var(--line); }
-  h3 { font-size:17px; margin:20px 0 4px; }
-  p, li { color:var(--fg); }
-  .meta { color:var(--muted); margin:0 0 24px; }
-  .summary { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; margin:20px 0; }
-  .summary ul { margin:8px 0 0; padding-left:20px; }
-  ul { padding-left:22px; }
-  li { margin:4px 0; }
-  a { color:var(--accent); }
-  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:15.5px; }
-  th, td { text-align:left; vertical-align:top; padding:9px 10px; border-bottom:1px solid var(--line); }
-  th { color:var(--muted); font-weight:600; }
-  footer { margin-top:48px; color:var(--muted); font-size:15px; }
-</style>
+<title>Privacy Policy · Pure Keto</title>
+<meta name="description" content="What Pure Keto collects, how it is used, and your rights.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
+<p class="kicker"><a href="./">Pure Keto</a> · Privacy Policy</p>
+<h1>Your data, your rules.</h1>
+<p class="lead">Effective <span id="effective">September 29, 2026</span>. What we collect, how we use it, and your rights. This is the same policy shown in the app under Settings, Privacy Policy.</p>
 
-<h1>Pure Keto Privacy Policy</h1>
-<p class="meta">Effective September 25, 2026</p>
-
-<div class="summary">
-  <strong>The short version</strong>
-  <ul>
-    <li>We collect what you enter to run the app: your account, your profile, and your food and health logs.</li>
-    <li>AI features send only the specific inputs listed in section 5 to Anthropic. We never send your email, password, weight, height, age, Apple Health data, or blood work.</li>
-    <li>We do not sell your data. We do not show ads. We do not track you across other apps or websites.</li>
-    <li>You can delete your account and everything in it from inside the app.</li>
-  </ul>
-</div>
-
-<h2>1. Who we are</h2>
-<p>Pure Keto is a mobile app for tracking keto nutrition, with AI tools for scanning recipes and foods, planning meals, and coaching. In this policy, "we", "us", and "our" mean the Pure Keto team. Contact us at <a href="mailto:privacy@ketocoach.app">privacy@ketocoach.app</a>.</p>
-
-<h2>2. What we collect</h2>
-
-<h3>What you give us</h3>
+<section>
+<h2>The short version</h2>
 <ul>
-  <li><strong>Account:</strong> your email address, your password (stored only as a secure hash), and the display name you choose.</li>
-  <li><strong>Profile:</strong> details you enter during setup or in Settings, such as age, sex, height, weight, activity level, goals, dietary restrictions, and your country and city. You can also choose to tell us if you are pregnant or breastfeeding.</li>
-  <li><strong>Logs:</strong> meals, macros, water, electrolytes, ketone readings, glucose readings, blood work entries, exercise, fasting, weight entries, streaks, saved recipes, shopping lists, and your conversations with the Coach.</li>
-  <li><strong>Photos:</strong> pictures of recipes, meals, or food that you take or upload for scanning.</li>
-  <li><strong>Barcodes:</strong> the barcode numbers you scan.</li>
+<li>We collect what you enter to run the app: your account, your profile, and your food and health logs.</li>
+<li>AI features send only the specific inputs listed under AI Processing, and only after you allow them. We never send your email, password, height, exact birth date, or blood work. The only Apple Health or Health Connect data sent is your weigh-ins, to the Coach.</li>
+<li>We do not sell your data, show ads, or track you across other apps or websites.</li>
+<li>You can delete your account and everything in it from the Me tab, or <a href="delete-account.html">ask us to delete it</a>.</li>
 </ul>
+</section>
 
-<h3>What we collect automatically</h3>
+<section>
+<h2>Information We Collect</h2>
 <ul>
-  <li><strong>Usage analytics:</strong> which screens and features you use, such as scans, logged meals, and paywall views. Each event is stored with your account ID, your subscription tier, your country and city from your profile, your device type, your operating system, and your app version. It is stored in our own database. We do not use a third party analytics or advertising service.</li>
-  <li><strong>Purchases:</strong> your subscription tier and token balance. Apple processes the payment. We never see your card or payment details.</li>
+<li>Account: your email, your password (stored only as a secure hash), and your display name.</li>
+<li>Profile you enter: age, sex, height, weight, activity level, goals, dietary restrictions, cooking skill, household size, and whether you also cook for children under 12. Pregnancy or breastfeeding status only if you choose to set it.</li>
+<li>Where you are: your country and time zone, read from your phone's settings, and a city if you enter one. Settings can fill the city in from your time zone's name. Earlier versions could take one approximate location reading, so a country, state and city saved from it may still be on your account.</li>
+<li>Health answers you choose to give: health conditions, a history of disordered eating, keto experience and style, typical sleep, coffee and alcohol habits, whether you are in recovery from alcohol, and your weekly stress level.</li>
+<li>Logs: meals, macros, water, electrolytes, ketone and glucose readings, blood work entries, exercise, fasting, weight, streaks, saved recipes, shopping lists, and your Coach conversations.</li>
+<li>Photos you take or upload for scanning, and barcode numbers you scan. We do not keep your photos.</li>
+<li>Usage analytics: screens and features you use, stored with your account ID, subscription tier, sex, age range, keto day and phase, weight goal, the country, state and city on your profile, device model, operating system, and app version. Stored in our own database. We use no third party analytics or advertising service.</li>
+<li>Purchases: your subscription tier and token balance. Apple (iPhone) or Google Play (Android) processes payment. We never see your card details.</li>
+<li>Reports you file on a Coach reply: the reply, the reason you picked, and when. The Pure Keto team reads them to make the Coach safer.</li>
 </ul>
+</section>
 
-<h2>3. Permissions the app asks for</h2>
-<table>
-  <tr><th>Permission</th><th>What it is used for</th></tr>
-  <tr><td>Camera</td><td>Scanning recipes, meals, and barcodes.</td></tr>
-  <tr><td>Photos</td><td>Uploading a recipe or food picture you already have.</td></tr>
-  <tr><td>Location (optional)</td><td>One approximate reading, to fill in your country and city if your device settings do not already tell us. We store the country, state, and city. We do not track your movements.</td></tr>
-  <tr><td>Face ID (optional)</td><td>Unlocking the app. Face ID is handled entirely by iOS. We never receive your face data.</td></tr>
-  <tr><td>Apple Health (optional)</td><td>See section 4.</td></tr>
-  <tr><td>Notifications (optional)</td><td>Reminders you turn on.</td></tr>
-</table>
-<p>Every permission is optional. You can change any of them later in your iPhone Settings.</p>
-
-<h2>4. Apple Health</h2>
-<p>If you connect Apple Health, and only for the categories you approve, Pure Keto reads your weight, water intake, step count, and workouts. We use these to show your progress and keep your coaching accurate, and we treat imported values like anything else you enter yourself.</p>
+<section>
+<h2>Permissions</h2>
 <ul>
-  <li>We do not use Apple Health data for advertising or marketing.</li>
-  <li>We do not sell it or share it with data brokers or advertisers.</li>
-  <li>We do not send it to AI providers.</li>
-  <li>You can turn access off any time in iPhone Settings, then Health, then Data Access and Devices.</li>
+<li>Camera and Photos: scanning recipes, meals, and barcodes.</li>
+<li>Face ID on iPhone, or fingerprint or face unlock on Android (optional): unlocking the app. Your phone's operating system handles it entirely. We never receive your face or fingerprint data.</li>
+<li>Notifications (optional): reminders you turn on.</li>
 </ul>
+<p>Every permission is optional and can be changed in your phone's Settings.</p>
+</section>
 
-<h2>5. How AI features use your data</h2>
-<p>Pure Keto uses Claude, an AI model from Anthropic, to identify foods, read recipes, build meal plans, and power the Coach. Each feature sends only what it needs:</p>
-<table>
-  <tr><th>Feature</th><th>What is sent to Anthropic</th></tr>
-  <tr><td>Recipe scan, Keto or Not, barcode lookup</td><td>The photo, the recipe text or ingredients, or the barcode number.</td></tr>
-  <tr><td>Meal plans and meal swaps</td><td>Your dietary restrictions, daily macro targets, servings, cooking skill, and the meal being swapped.</td></tr>
-  <tr><td>Cheat Day reset plan</td><td>What you ate, how much, your current streak, and your daily carb limit.</td></tr>
-  <tr><td>Coach</td><td>Your recent messages, your display name, your day count and phase, your streak, today's macros, hydration and electrolytes, your fasting status, your pregnancy or breastfeeding status if you set one, and short summaries of your past Coach conversations.</td></tr>
-</table>
-<p><strong>Never sent to Anthropic:</strong> your email, password, weight, height, age, Apple Health data, blood work entries, or location.</p>
+<section>
+<h2>Apple Health and Health Connect</h2>
+<p>If you connect Apple Health (iPhone) or Health Connect (Android), and only for the categories you approve, Pure Keto reads your weight, water intake, step count, and workouts. On Android it also reads the active calories burned during those workouts. We use them to show your progress and to keep your coaching accurate. Imported values are treated like anything you enter yourself. Pure Keto only reads this data. It never writes to either one.</p>
 <ul>
-  <li>Under Anthropic's commercial API terms, inputs sent through the API are not used to train its models.</li>
-  <li>Food and barcode lookup results may be saved in shared caches on our servers to make the app faster. Those caches are not tied to your account.</li>
-  <li>We do not keep your photos. They are sent for analysis and are not saved to our storage.</li>
-  <li>AI output can be wrong. Pure Keto is not medical advice and does not replace your doctor, especially if you take medication, manage diabetes, are pregnant, or have a medical condition.</li>
+<li>We do not use Apple Health or Health Connect data for advertising or marketing.</li>
+<li>We do not sell it or share it with data brokers or advertisers.</li>
+<li>We send only your weigh-ins to our AI provider, Anthropic, for the Coach, and only after you allow AI features. Your water, steps and workouts are never sent.</li>
+<li>Turn access off any time. On iPhone: Settings, then Health, then Data Access and Devices. On Android: Health Connect, under App permissions.</li>
 </ul>
+</section>
 
-<h2>6. Who else handles your data</h2>
-<p>We use these service providers to run the app. Each handles data under its own privacy policy.</p>
-<table>
-  <tr><th>Provider</th><th>Role</th><th>What it receives</th></tr>
-  <tr><td>Supabase</td><td>Database, sign in, and server functions</td><td>Your account and everything you save in the app</td></tr>
-  <tr><td>Anthropic</td><td>AI processing</td><td>The inputs listed in section 5</td></tr>
-  <tr><td>RevenueCat</td><td>Subscription and token purchase management</td><td>Your app user ID and purchase status</td></tr>
-  <tr><td>Apple</td><td>Payments, Apple Health, App Store</td><td>Governed by Apple's terms</td></tr>
-  <tr><td>Open Food Facts</td><td>Public barcode product database</td><td>The barcode number, and your IP address as with any web request</td></tr>
-  <tr><td>Resend</td><td>Email delivery</td><td>Only if you apply to our Creator Program: your application details</td></tr>
-</table>
-<p>We do not sell your personal data. We do not share it for advertising. We may disclose it if the law requires it or to protect the safety of our users.</p>
-
-<h2>7. Affiliate links</h2>
-<p>Some shopping links in the app go to retailers such as Amazon or iHerb. If you buy after tapping one, we may earn a commission at no extra cost to you. The retailer handles your purchase, your payment details, and your data under its own policy.</p>
-
-<h2>8. How long we keep data, and deleting it</h2>
-<p>We keep your data while your account exists. To delete it, open the Me tab, tap <strong>Delete Account</strong>, and type DELETE to confirm. This permanently deletes your account, your logs, your Coach conversations, your saved recipes, your token balance, and your usage history from our database. It cannot be undone.</p>
-<p>Apple bills subscriptions, so deleting your account does not cancel one. Cancel it in your iPhone Settings under your Apple Account, then Subscriptions.</p>
-<p>If you cannot use the in-app option, email <a href="mailto:privacy@ketocoach.app">privacy@ketocoach.app</a> from the address on your account and we will delete it for you.</p>
-
-<h2>9. Your rights</h2>
-<p>Depending on where you live, laws such as the GDPR, the UK GDPR, Thailand's PDPA, and California's CCPA give you rights over your data. In plain terms, you can ask us to:</p>
+<section>
+<h2>AI Processing</h2>
+<p>Pure Keto's AI features send data to our AI provider, Anthropic. Nothing is sent to Anthropic until you allow AI features. The app asks during setup, or the first time you use one, and you can turn them off in the app's Privacy Policy screen at any time.</p>
+<p>Each feature sends only what it needs:</p>
 <ul>
-  <li>give you a copy of your data, in a machine readable format where possible</li>
-  <li>correct data that is wrong (most of it you can edit in the app)</li>
-  <li>delete your data</li>
-  <li>stop using your data for analytics linked to your account</li>
+<li>Recipe scan, meal photo scan, and Keto or Not: the photo only. Where the app compares a result with your dietary restrictions or your daily net carb limit, it does that on your phone.</li>
+<li>Making the keto version of a scanned recipe: the recipe's name, its ingredients with the swaps you picked, your dietary restrictions, whether you use metric or imperial units, and, if you told us you are in recovery from alcohol, a rule to leave alcohol out.</li>
+<li>Barcode lookup uses no AI. The barcode number goes to Open Food Facts, listed under Third-Party Services.</li>
+<li>Meal plans and swaps: your dietary restrictions, daily macro targets, servings (from your household size), cooking skill and time, whether you also cook for children under 12, the ingredients and cuisines you pick and the ingredients you exclude, the meal being swapped, anything you type about what you want instead, whether you use metric or imperial units, and, if you told us you are in recovery from alcohol, a rule to leave alcohol out.</li>
+<li>Cheat Day reset plans (called Gentle Reset for some accounts) are built on your phone. Nothing from them is sent to Anthropic.</li>
+<li>Coach: up to the last 10 messages of the chat you are in, and from up to three of your other recent chats, the topic, the start of your first message and the start of the Coach's last reply. Also your display name, whether you use kg or lb, day count, phase and streak, today's macros and targets, hydration and electrolytes, fasting and flex day status, the time of day, whether your stress level is Overloaded or In crisis, and, if you opened the chat from a From Coach card, what that card was about. Also your profile answers, so replies fit you: goals, dietary restrictions, health conditions, keto experience and style, activity level, cooking skill, household size, whether you also cook for children under 12, weight goal and weekly pace, sex, age range, typical sleep and coffee, how often you drink (or only that you are in recovery), pregnancy or breastfeeding status if you set one, your starting, current and goal weight, and a summary of your weigh-ins, including any from Apple Health or Health Connect: how many you have logged and over how long, the latest seven, weekly averages for up to eight weeks, and the trend.</li>
+<li>If you told us about a history of disordered eating, the Coach is told that so it keeps things gentle. It is not sent your weigh-ins, the weight or weekly pace saved in your profile, lines from your other chats, or messages from earlier visits to a chat. What you type in the chat you are in is sent as you wrote it, so if you write a weight there, the Coach will read it.</li>
+<li>If you told us you are in recovery from alcohol, the Coach is not sent lines from your other chats or messages from earlier visits to a chat, so an old conversation about drinking is never brought back.</li>
 </ul>
-<p>Email <a href="mailto:privacy@ketocoach.app">privacy@ketocoach.app</a> and we will reply within 30 days. If you are in the EU, UK, or Thailand, you also have the right to complain to your local data protection authority.</p>
+<p>Never sent to Anthropic: your email, password, height, exact birth date, blood work entries, location, or any Apple Health or Health Connect data other than your weigh-ins.</p>
+<ul>
+<li>Under Anthropic's commercial API terms, inputs sent through the API are not used to train its models.</li>
+<li>Food, barcode, and recipe scan results may be saved in shared caches to make the app faster. Those caches are not tied to your account.</li>
+<li>Coach replies are never cached or shared. Each one is written for you alone, and no other user can see your messages or the Coach's replies.</li>
+<li>AI output can be wrong. Pure Keto is not medical advice. Talk to your doctor, especially if you take medication, manage diabetes, are pregnant, or have a medical condition.</li>
+</ul>
+</section>
 
-<h2>10. Security</h2>
-<p>Data travels over HTTPS and is encrypted at rest by Supabase. Row level security rules mean each account can only read its own records. Your sign in token is kept in your device's secure storage. No system is perfectly secure, but we take reasonable steps to protect your data.</p>
+<section>
+<h2>Data Storage &amp; Security</h2>
+<ul>
+<li>Data travels over HTTPS and is encrypted at rest by Supabase.</li>
+<li>Row level security means each account can only read its own records.</li>
+<li>Passwords are hashed and never stored in plain text. Your sign in token is kept in your device's secure storage.</li>
+</ul>
+</section>
 
-<h2>11. International transfers</h2>
-<p>Our providers may process your data in countries other than your own, including the United States. By using the app you understand your data may be handled there.</p>
+<section>
+<h2>Third-Party Services</h2>
+<ul>
+<li>Supabase: database, sign in, and server functions.</li>
+<li>Anthropic: AI processing, limited to the inputs listed above.</li>
+<li>RevenueCat: subscription and token purchases. Receives your app user ID and purchase status.</li>
+<li>Apple, on iPhone: payments, Apple Health, and the App Store.</li>
+<li>Google, on Android: payments and the Google Play store, and Health Connect on your phone.</li>
+<li>Open Food Facts: public barcode database. Receives the barcode number and your IP address, as any web request does.</li>
+<li>Resend: email delivery, only if you apply to our Creator Program.</li>
+</ul>
+<p>Each provider handles data under its own privacy policy. We do not sell your personal data or share it for advertising.</p>
+</section>
 
-<h2>12. Children</h2>
+<section>
+<h2>Keeping and Deleting Your Data</h2>
+<p>We keep your data while your account exists. To delete it, open the Me tab, tap Delete Account, and type DELETE. This permanently deletes your account, logs, Coach conversations, saved recipes, token balance, and usage history. It cannot be undone. If you no longer have the app, <a href="delete-account.html">ask us to delete it</a>.</p>
+<p>Apple or Google Play bills subscriptions, so deleting your account does not cancel one. On iPhone, cancel it in Settings under your Apple Account, then Subscriptions. On Android, cancel it in the Google Play app, under Subscriptions.</p>
+</section>
+
+<section>
+<h2>Your Rights</h2>
+<p>Depending on where you live, laws such as the GDPR, the UK GDPR, Thailand's PDPA, and California's CCPA give you rights over your data. You can ask us to:</p>
+<ul>
+<li>Give you a copy of your data in a machine readable format</li>
+<li>Correct data that is wrong (most of it you can edit in the app)</li>
+<li>Delete your data</li>
+<li>Stop using your data for analytics linked to your account</li>
+</ul>
+<p>To make a request, email us at <a href="mailto:support@lifteddigitalmedia.com">support@lifteddigitalmedia.com</a></p>
+<p>We reply within 30 days. If you are in the EU, UK, or Thailand, you can also complain to your local data protection authority.</p>
+</section>
+
+<section>
+<h2>Affiliate Links</h2>
+<p>Some shopping links go to retailers such as Amazon or iHerb. If you buy after tapping one, we may earn a commission at no extra cost to you. The retailer handles your purchase, payment details, and data under its own policy.</p>
+</section>
+
+<section>
+<h2>International Transfers</h2>
+<p>Our providers may process your data in countries other than your own, including the United States.</p>
+</section>
+
+<section>
+<h2>Children's Privacy</h2>
 <p>Pure Keto is not for children under 16. We do not knowingly collect data from them. If you believe a child has given us data, contact us and we will delete it.</p>
+</section>
 
-<h2>13. Changes to this policy</h2>
-<p>If we make a meaningful change, we will update the date above and tell you in the app. The current version is always at this address.</p>
+<section>
+<h2>Changes to This Policy</h2>
+<p>If we make a meaningful change, we will update the date above and tell you in the app.</p>
+</section>
 
-<h2>14. Contact</h2>
-<p>Questions or requests: <a href="mailto:privacy@ketocoach.app">privacy@ketocoach.app</a></p>
-
-<footer>Pure Keto Privacy Policy, effective September 25, 2026.</footer>
+<section>
+<h2>Contact Us</h2>
+<p>Questions or requests? Reach us at <a href="mailto:support@lifteddigitalmedia.com">support@lifteddigitalmedia.com</a></p>
+</section>
 </main>
 </body>
 </html>
